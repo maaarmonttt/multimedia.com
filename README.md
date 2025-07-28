@@ -1,1 +1,139 @@
-# multimedia.com
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entre agua y raíces – Proyecto Xochimilco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    
+</head>
+<body>
+
+<!-- TOGGLE BUTTON -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h4 class="text-center">Proyecto Xochimilco</h4>
+  <a href="#inicio" onclick="autoCloseSidebar()">Inicio</a>
+  <a href="#documental" onclick="autoCloseSidebar()">Entre raíces (documental)</a>
+  <a href="#podcast" onclick="autoCloseSidebar()">Con el agua hasta el micrófono (podcast)</a>
+  <a href="#stopmotion" onclick="autoCloseSidebar()">Las aventuras de Chinampo Trajinero</a>
+  <a href="#galeria" onclick="autoCloseSidebar()">Galería</a>
+  <a href="#sobre" onclick="autoCloseSidebar()">Sobre</a>
+</div>
+
+<div class="content" id="mainContent">
+
+<!-- HEADER -->
+<header id="inicio" class="text-white text-center d-flex flex-column justify-content-center align-items-center"
+  style="height: 100vh; background-image: url('imagenes/IMG_2169.JPG'); background-attachment: fixed; background-size: cover; background-position: center;">
+  <div style="background-color: rgba(0, 0, 0, 0.75); padding: 3rem; border-radius: 16px; max-width: 850px;">
+    <h1 class="display-3 fw-bold" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">Entre agua y raíces</h1>
+    <p class="lead fs-4" style="text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">
+      Un viaje visual y sonoro por la crisis climática en Xochimilco y las voces que aún la resisten.
+    </p>
+    <a href="#documental" class="btn btn-outline-light btn-lg mt-4">Explora el documental</a>
+  </div>
+</header>
+
+<!-- DOCUMENTAL -->
+<section id="documental" class="container py-5">
+  <h2 class="mb-4">Entre raíces-Documental</h2>
+  <p>
+    Un cortometraje documental que expone la realidad del cambio climático en Xochimilco a través de imágenes, entrevistas y preguntas fundamentales hechas a quienes habitan el territorio.
+  </p>
+     <div class="ratio ratio-16x9 my-4">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/DW9vGw0uAzI?si=OUZzcFPT9-w_hfHW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- PODCAST -->
+<section id="podcast" class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Con el agua hasta el micrófono-Podcast</h2>
+    <p>Una entrega sonora que reúne las reflexiones de quienes viven diariamente la crisis del agua en Xochimilco.</p>
+    <audio controls class="mt-3">
+      <source src="audio/con el agua hasta el microfono.mp3" type="audio/mpeg">
+    
+    </audio>
+  </div>
+</section>
+
+<!-- STOP MOTION -->
+<section id="stopmotion" class="container py-5">
+  <h2 class="mb-4">Las aventuras de Chinampo Trajinero-Stop motion</h2>
+  <p>Una animación educativa protagonizada por un reportero-marioneta entusiasta y un ajolote malhumorado. Juntos recorren los canales de Xochimilco para hablar sobre medio ambiente y memoria territorial con humor y mucha imaginación.</p>
+  <div class="ratio ratio-16x9 my-4">
+    <iframe src="https://www.youtube.com/embed/0Cw49iQ_ErY" title="Las aventuras de Chinampo Trajinero" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="mb-4 text-center">Galería</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <img src="imagenes/IMG_2162.JPG"alt="Imagen 1" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="imagenes/IMG_2169.JPG" alt="Imagen 2" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="imagenes/IMG_2172.JPG" alt="Imagen 3" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE EL PROYECTO -->
+<section id="sobre" class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Sobre</h2>
+    <p>Este proyecto fue realizado por estudiantes de diseño con el objetivo de visibilizar los efectos del cambio climático en Xochimilco desde una mirada reflexiva, crítica y esperanzadora. A través de diferentes formatos buscamos generar conversación, empatía y acción.</p>
+    <ul>
+      <li><strong>Entrevistas y guión:</strong> Carlos Barreto, Yaneli Tamayo</li>
+      <li><strong>Edición y animación:</strong> Carlos Barreto, Mariana Montes</li>
+      <li><strong>Podcast:</strong> Mariana Montes, Erick González, Carlos Barreto, Yaneli Tamayo</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-white py-4">
+  <div class="container text-center">
+    <h5>Gracias por visitar</h5>
+    <p>“Todavía hay agua. Todavía hay tiempo. Pero no tanto.”</p>
+    <small>© 2025 Multimedia, Mariana Montes – Todos los derechos reservados.</small>
+  </div>
+</footer>
+
+</div>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    sidebar.classList.toggle('hidden');
+    mainContent.classList.toggle('expanded');
+  }
+
+  function autoCloseSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    sidebar.classList.add('hidden');
+    mainContent.classList.add('expanded');
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
